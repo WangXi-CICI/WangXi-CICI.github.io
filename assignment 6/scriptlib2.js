@@ -23,11 +23,14 @@ $(document).ready(function(){
         $.getJSON(airtable_read_endpoint, function(result) {
                $.each(result.records, function(key,value) {
                    items = [];
-                       items.push(value.fields.book_name);
-                       items.push(value.fields.author);
-                       items.push(value.fields.publisher);
-                       items.push(value.fields.date_of_publication);
-                       items.push(value.fields.price);
+                       items.push(value.fields.Brand_Name);
+                       items.push(value.fields.Logo);
+                       items.push(value.fields.Classification);
+                       items.push(value.fields.Parent_Company);
+                       items.push(value.fields.Region);
+                       items.push(value.fields.Founding_time);
+                       items.push(value.fields.Promotion_Methods);
+                       items.push(value.fields.Sales_Channels);
                        console.log(items);
                 }); // end .each
                 console.log(dataSet);
@@ -38,14 +41,20 @@ $(document).ready(function(){
                  columns: [
                      { title: "Book",
                        defaultContent:""},
-                     { title: "Author",
+                     { title: "LOGO",
                          defaultContent:"" },
-                     { title: "Publisher",
+                     { title: "Classification",
                        defaultContent:"" },
-                     { title: "Date of Publication",
+                     { title: "Parent Company",
                        defaultContent:""},
-                     { title: "Price",
+                     { title: "Region",
                          defaultContent:""},
+                     { title: "Founding Time",
+                       defaultContent:""},
+                    { title: "Promotion Methods",
+                       defaultContent:""},
+                     { title: "Sales Channels",
+                       defaultContent:""},
                  ]
              } );
         }); // end .getJSON
