@@ -18,7 +18,7 @@ $(document).ready(function(){
     $("button#get_data").click(function() {
         var items = [];
         var i = 0;
-        var airtable_read_endpoint = "https://api.airtable.com/v0/appDnQqrSvIiUxEJi/Brand?api_key=keyyPUtYXF3XJfyEa";
+        var airtable_read_endpoint = "https://api.airtable.com/v0/appDuuMJUsvJejjQl/Imported%20table?api_key=keysvB4lHDB6fjPJK";
         var dataSet = [];
         $.getJSON(airtable_read_endpoint, function(result) {
                $.each(result.records, function(key,value) {
@@ -30,7 +30,7 @@ $(document).ready(function(){
                    items.push(value.fields.Founding_time);
                    items.push(value.fields.Sales_Channels);
                    dataSet.push(items);
-                       console.log(items);
+                   console.log(items);
                 }); // end .each
                 console.log(dataSet);
 
@@ -58,13 +58,13 @@ $(document).ready(function(){
      $("button#get_data2").click(function() {
       var items = [];
       var i = 0;
-      var airtable_read_endpoint = "https://api.airtable.com/v0/appKIU0zkdHt3AVTL/Roll-up?api_key=keycj6dRwXwYLEjiv";
+      var airtable_read_endpoint = "https://api.airtable.com/v0/appDnQqrSvIiUxEJi/Sales_Channels?api_key=keysvB4lHDB6fjPJK";
       var dataSet = [];
       $.getJSON(airtable_read_endpoint, function(result) {
              $.each(result.records, function(key,value) {
                  items = [];
-                     items.push(value.fields.Name);
-                     items.push(value.fields.total_items_by_category);
+                     items.push(value.fields.Channels);
+                     items.push(value.fields.total_items_by_channel);
                      dataSet.push(items);
                      console.log(items);
               }); // end .each
@@ -74,7 +74,7 @@ $(document).ready(function(){
                data: dataSet,
                retrieve: true,
                columns: [
-                   { title: "Product",
+                   { title: "Channels",
                      defaultContent:""},
                    { title: "Total Amount",
                        defaultContent:"" },
