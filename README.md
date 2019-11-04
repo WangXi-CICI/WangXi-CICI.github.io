@@ -1,1 +1,1 @@
-Assignment 6 has been uploaded.
+Assignment 7 has been uploaded, containing the proposal of final project and mobile-first design webpage.
