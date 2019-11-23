@@ -44,11 +44,11 @@ $(document).ready(function(){
            var chart = c3.generate({
             data: {
                 columns: dataSet,
-                type : 'line chart'
+                type : 'bar'
             },
             axis: {
-              x: {label: '年份'},
-              y: {label: '营业收入'}
+              x: {label: 'Product'},
+              y: {label: '# of Items'}
             },
             bar: {
                 title: "# of Items by Product Category:",
@@ -60,6 +60,3 @@ $(document).ready(function(){
    }); // end button
 
 }); // document ready
-
-
-
