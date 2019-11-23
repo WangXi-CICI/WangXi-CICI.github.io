@@ -36,7 +36,7 @@ $(document).ready(function(){
                columns: [
                    { title: "年份",
                      defaultContent:""},
-                   { title: "营业收入",
+                   { title: "营业收入（亿元）",
                        defaultContent:"" },
                ]
            } );
