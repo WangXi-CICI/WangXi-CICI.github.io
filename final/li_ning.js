@@ -49,6 +49,9 @@ $(document).ready(function(){
             axis: {
               x: {label: '年份'},
               y: {label: '营业收入（亿元）'}
+            },
+            line: {
+                title: "# of Items by Product Category:",
             }
         });
 
