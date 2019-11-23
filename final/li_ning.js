@@ -42,14 +42,13 @@ $(document).ready(function(){
            } );
 
            var chart = c3.generate({
-            bindto: '#chart4',
             data: {
                 columns: dataSet,
-                
+                type : '#chart'
             },
             axis: {
-              x: {label: 'Product'},
-              y: {label: '# of Items'}
+              x: {label: '年份'},
+              y: {label: '营业收入（亿元）'}
             },
             bar: {
                 title: "# of Items by Product Category:",
