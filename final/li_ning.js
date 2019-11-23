@@ -44,7 +44,7 @@ $(document).ready(function(){
            var chart = c3.generate({
             data: {
                 columns: dataSet,
-                type : '#chart'
+                type : 'line'
             },
             axis: {
               x: {label: '年份'},
