@@ -47,10 +47,10 @@ $(document).ready(function(){
                 type : 'line'
             },
             axis: {
-              x: {label: '年份'},
-              y: {label: '营业收入（亿元）'}
+              x: {label: 'Product'},
+              y: {label: '# of Items'}
             },
-            line: {
+            bar: {
                 title: "# of Items by Product Category:",
             }
         });
