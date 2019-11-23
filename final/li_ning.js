@@ -42,9 +42,10 @@ $(document).ready(function(){
            } );
 
            var chart = c3.generate({
+            bindto: '#chart4',
             data: {
                 columns: dataSet,
-                type : 'line'
+                
             },
             axis: {
               x: {label: 'Product'},
@@ -60,3 +61,4 @@ $(document).ready(function(){
    }); // end button
 
 }); // document ready
+
