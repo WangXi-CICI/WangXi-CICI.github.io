@@ -1,62 +1,45 @@
-$(document).ready(function(){
-
-    $("button#hide_h2").click(function() {
-        $("h2").hide(500);
-    });
-
-    $("button#show_h2").click(function() {
-        $("h2").show(300);
-        $("h2").css("color","blue");
-        $("h2").html("You clicked me hard.");
-    });
-
-    $("button#clear_screen").click(function() {
-        var $x = $("container");
-        $x.empty();
-    });
-
-     $("button#get_data2").click(function() {
-      var items = [];
-      var i = 0;
-      var airtable_read_endpoint = "https://api.airtable.com/v0/app9T6xQJ88UdG60q/lining?api_key=keysvB4lHDB6fjPJK";
-      var dataSet = [];
-      $.getJSON(airtable_read_endpoint, function(result) {
-             $.each(result.records, function(key,value) {
-                 items = [];
-                     items.push(value.fields.year);
-                     items.push(value.fields.revenue);
-                     dataSet.push(items);
-                     console.log(items);
-              }); // end .each
-              console.log(dataSet);
-
-           $('#table2').DataTable( {
-               data: dataSet,
-               retrieve: true,
-               columns: [
-                   { title: "年份",
-                     defaultContent:""},
-                   { title: "营业收入（亿元）",
-                       defaultContent:"" },
-               ]
-           } );
-
-           var chart = c3.generate({
-            data: {
-                columns: dataSet,
-                type : 'bar'
-            },
-            axis: {
-              x: {label: 'Product'},
-              y: {label: '# of Items'}
-            },
-            bar: {
-                title: "# of Items by Product Category:",
-            }
-        });
-
-  }); // end .getJSON
-
-}); // end button
-
-}); // document ready
+var chart = Highcharts.chart('ranking1', {
+	title: {
+		text: '李宁2007-2018营业收入'
+	},
+	subtitle: {
+		text: '数据来源：李宁财报'
+	},
+	yAxis: {
+		reversed:true,
+		title: {
+			text: '销售收入'
+		},
+	},
+	legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle'
+	},
+	plotOptions: {
+		series: {
+			label: {
+				connectorAllowed: false
+			},
+			pointStart: 2007
+		},
+	},
+	series: [{
+		
+		data: [43.49, 66.90, 83.87, 94.79, 89.29, 67.39, 58.24, 67.28, 70.89, 80.15, 88.74, 105.11]
+	}],
+	responsive: {
+		rules: [{
+			condition: {
+				maxWidth: 500
+			},
+			chartOptions: {
+				legend: {
+					layout: 'horizontal',
+					align: 'center',
+					verticalAlign: 'bottom'
+				},
+			},
+		}],
+	},
+});
