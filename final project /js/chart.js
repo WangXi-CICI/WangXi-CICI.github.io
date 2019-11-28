@@ -25,7 +25,7 @@ $(document).ready(function(){
              $.each(result.records, function(key,value) {
                  items = [];
                      items.push(value.fields.year);
-                     items.push(value.fields.percentage);
+                     items.push(value.fields.penetration);
                      dataSet.push(items);
                      console.log(items);
               }); // end .each
@@ -37,7 +37,7 @@ $(document).ready(function(){
                columns: [
                    { title: "year",
                      defaultContent:""},
-                   { title: "percentage",
+                   { title: "penetration",
                        defaultContent:"" },
                ]
            } );
@@ -48,8 +48,8 @@ $(document).ready(function(){
                     type : 'bar'
                 },
                 axis: {
-                  x: {label: 'Product'},
-                  y: {label: '# of Items'}
+                  x: {label: 'year'},
+                  y: {label: 'penetration'}
                 },
                 bar: {
                     title: "# of Items by Product Category:",
