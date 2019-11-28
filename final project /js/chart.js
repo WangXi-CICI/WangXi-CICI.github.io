@@ -45,13 +45,13 @@ $(document).ready(function(){
            var chart = c3.generate({
                 data: {
                     columns: dataSet,
-                    type : 'line'
+                    type : 'bar'
                 },
                 axis: {
                   x: {label: 'year'},
                   y: {label: 'penetration'}
                 },
-                line: {
+                bar: {
                     title: "# of Items by Product Category:",
                 }
             });
