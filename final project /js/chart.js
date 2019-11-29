@@ -19,16 +19,14 @@ $(document).ready(function(){
      $("button#get_data2").click(function() {
       var items = [];
       var i = 0;
-      var airtable_read_endpoint = "https://api.airtable.com/v0/apppIqRcXC8O3wJcj/Table%201?api_key=keysvB4lHDB6fjPJK";
+      var airtable_read_endpoint = "https://api.airtable.com/v0/app9T6xQJ88UdG60q/Table%203?api_key=keysvB4lHDB6fjPJK";
       var dataSet = [];
       $.getJSON(airtable_read_endpoint, function(result) {
              $.each(result.records, function(key,value) {
                  items = [];
                  items.push(value.fields.year);
-                 items.push(value.fields.better);
-                 items.push(value.fields.no_change);
-                 items.push(value.fields.worse);
-                 items.push(value.fields.do_not_know);
+                 items.push(value.fields.penetration);
+                 
                      dataSet.push(items);
                      console.log(items);
               }); // end .each
@@ -40,15 +38,8 @@ $(document).ready(function(){
                columns: [
                 { title: "year",
                 defaultContent:""},
-              { title: "better",
+              { title: "penetration",
                 defaultContent:""},
-              { title: "no_change",
-                  defaultContent:""},
-              { title: "worse",
-                defaultContent:""},
-                { title: "do_not_know",
-                defaultContent:""},
-            
                ]
            } );
 
@@ -59,7 +50,7 @@ $(document).ready(function(){
                 },
                 axis: {
                   x: {label: '年份'},
-                  y: {label: '好感度'}
+                  y: {label: '市场渗透率'}
                 },
                 bar: {
                     title: "# of Items by Product Category:",
