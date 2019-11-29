@@ -46,13 +46,13 @@ $(document).ready(function(){
            var chart = c3.generate({
                 data: {
                     columns: dataSet,
-                    type : 'bar'
+                    type : 'line'
                 },
                 axis: {
                   x: {label: '年份'},
                   y: {label: '市场渗透率'}
                 },
-                bar: {
+                line: {
                     title: "# of Items by Product Category:",
                 }
             });
