@@ -58,8 +58,8 @@ $(document).ready(function(){
                     type : 'bar'
                 },
                 axis: {
-                  x: {label: 'year'},
-                  y: {label: 'penetration'}
+                  x: {label: '年份'},
+                  y: {label: '好感度'}
                 },
                 bar: {
                     title: "# of Items by Product Category:",
