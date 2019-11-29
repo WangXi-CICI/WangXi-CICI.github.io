@@ -52,9 +52,7 @@ $(document).ready(function(){
                   x: {label: '年份'},
                   y: {label: '市场渗透率'}
                 },
-                line: {
-                    title: "# of Items by Product Category:",
-                }
+                
             });
 
       }); // end .getJSON
