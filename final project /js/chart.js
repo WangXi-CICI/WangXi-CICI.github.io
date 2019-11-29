@@ -52,7 +52,7 @@ $(document).ready(function(){
                   x: {label: '年份'},
                   y: {label: '市场渗透率'}
                 },
-                line: {
+                bar: {
                     title: "数据来源：有货电商平台",
                 }
             });
