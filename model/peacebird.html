@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>中国潮</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="" />
+      <script>
+         addEventListener("load", function () {
+         	setTimeout(hideURLbar, 0);
+         }, false);
+         
+         function hideURLbar() {
+         	window.scrollTo(0, 1);
+         }
+      </script>
+      <!--//meta tags ends here-->
+      <!--booststrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+      <!--//booststrap end-->
+      <!-- font-awesome icons -->
+      <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+      <!-- //font-awesome icons -->
+      <link href="css/owl.carousel.css" rel="stylesheet">
+      <!-- Owl-carousel-CSS -->
+      <!--stylesheets-->
+      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+      <!--//stylesheets-->
+      <link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+        
+        <style>
+            :root {
+                                                                                                                                                                                    	--white: #ffffff;
+                                                                                                                                                                                    	--black: #000000;
+                                                                                                                                                                                    	--blue:#0288d1;
+                                                                                                                                                                                    	--gray:#ebebeb;
+                                                                                                                                                                                    	--box-shadow1:0px 0px 18px 2px rgba(10, 55, 90, 0.15);
+                                                                                                                                                                                    }
+                                                                                                                                                                                    body{
+                                                                                                                                                                                    	font-family: 'Roboto', sans-serif;
+                                                                                                                                                                                        font-weight: lighter;
+                                                                                                                                                                                        color: #637280;
+                                                                                                                                                                                        -moz-user-select: none;
+                                                                                                                                                                                        -webkit-user-select: none;
+                                                                                                                                                                                        user-select: none;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    :focus{
+                                                                                                                                                                                        outline: 0px solid transparent !important;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline {
+                                                                                                                                                                                        padding: 50px 0;
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes {
+                                                                                                                                                                                            padding-bottom: 25px;
+                                                                                                                                                                                            position: relative;
+                                                                                                                                                                                        }
+                                                                                                                                                                                    .timeline-nodes:nth-child(even) {
+                                                                                                                                                                                        flex-direction: row-reverse;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline h3, .timeline p {
+                                                                                                                                                                                        padding: 5px 15px;
+                                                                                                                                                                                    } 
+                                                                                                                                                                                    .timeline h3{
+                                                                                                                                                                                        font-weight: lighter;
+                                                                                                                                                                                        background: var(--blue);
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline p, .timeline time {
+                                                                                                                                                                                        color: var(--blue)
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline::before {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        display: block;
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 0;
+                                                                                                                                                                                        left: 50%;
+                                                                                                                                                                                        width: 0;
+                                                                                                                                                                                        border-left: 2px dashed var(--blue);
+                                                                                                                                                                                        height: 100%;
+                                                                                                                                                                                        z-index: 1;
+                                                                                                                                                                                        transform: translateX(-50%);
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-content {
+                                                                                                                                                                                        border: 1px solid var(--blue);
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        border-radius: 0 0 10px 10px;
+                                                                                                                                                                                        box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2)
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(odd) h3,
+                                                                                                                                                                                    .timeline-nodes:nth-child(odd) p {
+                                                                                                                                                                                        text-align: right;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(odd) .timeline-date {
+                                                                                                                                                                                        text-align: left;
+                                                                                                                                                                                    }
+                                                                                                                                                                                     
+                                                                                                                                                                                    .timeline-nodes:nth-child(even) .timeline-date {
+                                                                                                                                                                                        text-align: right;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(odd) .timeline-content::after {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 5%;
+                                                                                                                                                                                        left: 100%;
+                                                                                                                                                                                        width: 0;
+                                                                                                                                                                                        border-left: 10px solid var(--blue);
+                                                                                                                                                                                        border-top: 10px solid transparent;
+                                                                                                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(even) .timeline-content::after {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 5%;
+                                                                                                                                                                                        right: 100%;
+                                                                                                                                                                                        width: 0;
+                                                                                                                                                                                        border-right: 10px solid var(--blue);
+                                                                                                                                                                                        border-top: 10px solid transparent;
+                                                                                                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-image {
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        z-index: 100;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-image::before {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        width: 80px;
+                                                                                                                                                                                        height: 80px;
+                                                                                                                                                                                        border: 2px dashed var(--blue);
+                                                                                                                                                                                        border-radius: 50%;
+                                                                                                                                                                                        display: block;
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 50%;
+                                                                                                                                                                                        left: 50%;
+                                                                                                                                                                                        transform: translate(-50%,-50%);
+                                                                                                                                                                                        background-color: #fff;
+                                                                                                                                                                                        z-index: 1;
+                                                                                                                                                                                        
+                                                                                                                                                                                    
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-image img {
+                                                                                                                                                                                        position: relative;
+                                                                                                                                                                                        z-index: 100;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    /*small device style*/
+                                                                                                                                                                                    
+                                                                                                                                                                                    @media (max-width: 767px) {
+                                                                                                                                                                                        .timeline-nodes:nth-child(odd) h3,
+                                                                                                                                                                                        .timeline-nodes:nth-child(odd) p {
+                                                                                                                                                                                        text-align: left
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(even) {
+                                                                                                                                                                                        flex-direction: row;
+                                                                                                                                                                                    }
+                                                                                                                                                                                        .timeline::before {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        display: block;
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 0;
+                                                                                                                                                                                        left: 4%;
+                                                                                                                                                                                        width: 0;
+                                                                                                                                                                                        border-left: 2px dashed var(--blue);
+                                                                                                                                                                                        height: 100%;
+                                                                                                                                                                                        z-index: 1;
+                                                                                                                                                                                        transform: translateX(-50%);
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline h3 {
+                                                                                                                                                                                        font-size: 1.7rem;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline p {
+                                                                                                                                                                                        font-size: 14px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-image {
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        left: 0%;
+                                                                                                                                                                                        top: 60px;
+                                                                                                                                                                                        /*transform: translateX(-50%;);*/
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(odd) .timeline-content::after {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 5%;
+                                                                                                                                                                                        left: auto;
+                                                                                                                                                                                        right: 100%;
+                                                                                                                                                                                        width: 0;
+                                                                                                                                                                                        border-left: 0;
+                                                                                                                                                                                        border-right: 10px solid var(--blue);
+                                                                                                                                                                                        border-top: 10px solid transparent;
+                                                                                                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(even) .timeline-content::after {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 5%;
+                                                                                                                                                                                        right: 100%;
+                                                                                                                                                                                        width: 0;
+                                                                                                                                                                                        border-right: 10px solid var(--blue);
+                                                                                                                                                                                        border-top: 10px solid transparent;
+                                                                                                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-nodes:nth-child(even) .timeline-date {
+                                                                                                                                                                                        text-align: left;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-image::before {
+                                                                                                                                                                                        width: 65px;
+                                                                                                                                                                                        height: 65px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    }
+                                                                                                                                                                                    
+                                                                                                                                                                                    /*extra small device style */
+                                                                                                                                                                                    @media (max-width: 575px) {
+                                                                                                                                                                                        .timeline::before {
+                                                                                                                                                                                        content: "";
+                                                                                                                                                                                        display: block;
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        top: 0;
+                                                                                                                                                                                        left: 3%;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .timeline-image {
+                                                                                                                                                                                        position: absolute;
+                                                                                                                                                                                        left: -5%;
+                                                                                                                                                                                        }
+                                                                                                                                                                                    .timeline-image::before {
+                                                                                                                                                                                        width: 60px;
+                                                                                                                                                                                        height: 60px;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    }
+        </style>
+    </head>
+    
+    <body>
+        <div class="header-outs" id="home">
+               <div class="header-bar">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="hedder-up">
+                        <h1><a class="navbar-brand" href="index.html">中国·潮</a></h1>
+                     </div>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                     </li>
+                                     <li class="nav-item">
+                                        <a href="about.html" class="nav-link">国潮历史</a>
+                                     </li>
+                                     <li class="nav-item">
+                                        <a href="service.html" class="nav-link">品牌故事</a>
+                                     </li>
+                                     <li class="nav-item">
+                                        <a href="gallery.html" class="nav-link">品牌详情</a>
+                                     </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+            <!-- //Navigation-->
+            <!--//headder-->
+            <!-- banner -->
+            <div class="inner_page-banner">
+            </div>
+        <div class="container">
+            <div class="timeline">
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>以象征自由、快乐、美丽的和平鸽为原型，PEACEBIRD太平鸟品牌成立。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1574320062568&amp;di=9f2c0f7af11031f920c334d1c6f6293f&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170531%2F216026b709ea43daabc1119870e57eb3_th.png"
+                        alt="img" class="img-fluid img-thumbnail" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>1995年</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2001年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>PEACEBIRD太平鸟女装品牌重新定位，产品全线转型，“时尚、亚洲、活力”。</p>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p class="text-justify">乐町LED’IN都市少女装品牌诞生，“甜美、优雅、活力”。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img class="img-fluid img-thumbnail" alt="img" style="border:0" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1574320103782&amp;di=f3f909e298425eaca17e95af6fbd7d30&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D1790091078%2C488182013%26fm%3D214%26gp%3D0.jpg">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2008年</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2012年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>完成股份制改造，宁波太平鸟时尚女装有限公司整体变更为宁波太平鸟时尚服饰股份有限公司。</p>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>成立合资企业，在大中华地区营销美国当红都市少女装品牌MATERIAL GIRL。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/material girl.jpg" class="img-fluid img-thumbnail" alt="img"
+                        style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2013年</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2017年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p class="text-justify">太平鸟上市，成为2017年首家登陆A股主板的时尚服饰企业。</p>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p class="text-justify">Lily 开启第三次转型，打造“全方位、多维度、国际化”的品牌形象。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2019年</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2018年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p class="text-justify">代表中国时尚品牌亮相纽约时装周。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

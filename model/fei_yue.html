@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>中国潮</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="" />
+        <script>
+           addEventListener("load", function () {
+               setTimeout(hideURLbar, 0);
+           }, false);
+           
+           function hideURLbar() {
+               window.scrollTo(0, 1);
+           }
+        </script>
+        <!--//meta tags ends here-->
+        <!--booststrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <!--//booststrap end-->
+        <!-- font-awesome icons -->
+        <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+        <!-- //font-awesome icons -->
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <!-- Owl-carousel-CSS -->
+        <!--stylesheets-->
+        <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+        <!--//stylesheets-->
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+          
+          <style>
+            :root {
+                                                                                                    	--white: #ffffff;
+                                                                                                    	--black: #000000;
+                                                                                                    	--blue:#0288d1;
+                                                                                                    	--gray:#ebebeb;
+                                                                                                    	--box-shadow1:0px 0px 18px 2px rgba(10, 55, 90, 0.15);
+                                                                                                    }
+                                                                                                    body{
+                                                                                                    	font-family: 'Roboto', sans-serif;
+                                                                                                        font-weight: lighter;
+                                                                                                        color: #637280;
+                                                                                                        -moz-user-select: none;
+                                                                                                        -webkit-user-select: none;
+                                                                                                        user-select: none;
+                                                                                                    }
+                                                                                                    :focus{
+                                                                                                        outline: 0px solid transparent !important;
+                                                                                                    }
+                                                                                                    .timeline {
+                                                                                                        padding: 50px 0;
+                                                                                                        position: relative;
+                                                                                                    }
+                                                                                                    .timeline-nodes {
+                                                                                                            padding-bottom: 25px;
+                                                                                                            position: relative;
+                                                                                                        }
+                                                                                                    .timeline-nodes:nth-child(even) {
+                                                                                                        flex-direction: row-reverse;
+                                                                                                    }
+                                                                                                    .timeline h3, .timeline p {
+                                                                                                        padding: 5px 15px;
+                                                                                                    } 
+                                                                                                    .timeline h3{
+                                                                                                        font-weight: lighter;
+                                                                                                        background: var(--blue);
+                                                                                                    }
+                                                                                                    .timeline p, .timeline time {
+                                                                                                        color: var(--blue)
+                                                                                                    }
+                                                                                                    .timeline::before {
+                                                                                                        content: "";
+                                                                                                        display: block;
+                                                                                                        position: absolute;
+                                                                                                        top: 0;
+                                                                                                        left: 50%;
+                                                                                                        width: 0;
+                                                                                                        border-left: 2px dashed var(--blue);
+                                                                                                        height: 100%;
+                                                                                                        z-index: 1;
+                                                                                                        transform: translateX(-50%);
+                                                                                                    }
+                                                                                                    .timeline-content {
+                                                                                                        border: 1px solid var(--blue);
+                                                                                                        position: relative;
+                                                                                                        border-radius: 0 0 10px 10px;
+                                                                                                        box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2)
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(odd) h3,
+                                                                                                    .timeline-nodes:nth-child(odd) p {
+                                                                                                        text-align: right;
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(odd) .timeline-date {
+                                                                                                        text-align: left;
+                                                                                                    }
+                                                                                                     
+                                                                                                    .timeline-nodes:nth-child(even) .timeline-date {
+                                                                                                        text-align: right;
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(odd) .timeline-content::after {
+                                                                                                        content: "";
+                                                                                                        position: absolute;
+                                                                                                        top: 5%;
+                                                                                                        left: 100%;
+                                                                                                        width: 0;
+                                                                                                        border-left: 10px solid var(--blue);
+                                                                                                        border-top: 10px solid transparent;
+                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(even) .timeline-content::after {
+                                                                                                        content: "";
+                                                                                                        position: absolute;
+                                                                                                        top: 5%;
+                                                                                                        right: 100%;
+                                                                                                        width: 0;
+                                                                                                        border-right: 10px solid var(--blue);
+                                                                                                        border-top: 10px solid transparent;
+                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                    }
+                                                                                                    .timeline-image {
+                                                                                                        position: relative;
+                                                                                                        z-index: 100;
+                                                                                                    }
+                                                                                                    .timeline-image::before {
+                                                                                                        content: "";
+                                                                                                        width: 80px;
+                                                                                                        height: 80px;
+                                                                                                        border: 2px dashed var(--blue);
+                                                                                                        border-radius: 50%;
+                                                                                                        display: block;
+                                                                                                        position: absolute;
+                                                                                                        top: 50%;
+                                                                                                        left: 50%;
+                                                                                                        transform: translate(-50%,-50%);
+                                                                                                        background-color: #fff;
+                                                                                                        z-index: 1;
+                                                                                                        
+                                                                                                    
+                                                                                                    }
+                                                                                                    .timeline-image img {
+                                                                                                        position: relative;
+                                                                                                        z-index: 100;
+                                                                                                    }
+                                                                                                    /*small device style*/
+                                                                                                    
+                                                                                                    @media (max-width: 767px) {
+                                                                                                        .timeline-nodes:nth-child(odd) h3,
+                                                                                                        .timeline-nodes:nth-child(odd) p {
+                                                                                                        text-align: left
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(even) {
+                                                                                                        flex-direction: row;
+                                                                                                    }
+                                                                                                        .timeline::before {
+                                                                                                        content: "";
+                                                                                                        display: block;
+                                                                                                        position: absolute;
+                                                                                                        top: 0;
+                                                                                                        left: 4%;
+                                                                                                        width: 0;
+                                                                                                        border-left: 2px dashed var(--blue);
+                                                                                                        height: 100%;
+                                                                                                        z-index: 1;
+                                                                                                        transform: translateX(-50%);
+                                                                                                    }
+                                                                                                    .timeline h3 {
+                                                                                                        font-size: 1.7rem;
+                                                                                                    }
+                                                                                                    .timeline p {
+                                                                                                        font-size: 14px;
+                                                                                                    }
+                                                                                                    .timeline-image {
+                                                                                                        position: absolute;
+                                                                                                        left: 0%;
+                                                                                                        top: 60px;
+                                                                                                        /*transform: translateX(-50%;);*/
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(odd) .timeline-content::after {
+                                                                                                        content: "";
+                                                                                                        position: absolute;
+                                                                                                        top: 5%;
+                                                                                                        left: auto;
+                                                                                                        right: 100%;
+                                                                                                        width: 0;
+                                                                                                        border-left: 0;
+                                                                                                        border-right: 10px solid var(--blue);
+                                                                                                        border-top: 10px solid transparent;
+                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(even) .timeline-content::after {
+                                                                                                        content: "";
+                                                                                                        position: absolute;
+                                                                                                        top: 5%;
+                                                                                                        right: 100%;
+                                                                                                        width: 0;
+                                                                                                        border-right: 10px solid var(--blue);
+                                                                                                        border-top: 10px solid transparent;
+                                                                                                        border-bottom: 10px solid transparent;
+                                                                                                    }
+                                                                                                    .timeline-nodes:nth-child(even) .timeline-date {
+                                                                                                        text-align: left;
+                                                                                                    }
+                                                                                                    .timeline-image::before {
+                                                                                                        width: 65px;
+                                                                                                        height: 65px;
+                                                                                                    }
+                                                                                                    }
+                                                                                                    
+                                                                                                    /*extra small device style */
+                                                                                                    @media (max-width: 575px) {
+                                                                                                        .timeline::before {
+                                                                                                        content: "";
+                                                                                                        display: block;
+                                                                                                        position: absolute;
+                                                                                                        top: 0;
+                                                                                                        left: 3%;
+                                                                                                    }
+                                                                                                    .timeline-image {
+                                                                                                        position: absolute;
+                                                                                                        left: -5%;
+                                                                                                        }
+                                                                                                    .timeline-image::before {
+                                                                                                        width: 60px;
+                                                                                                        height: 60px;
+                                                                                                    }
+                                                                                                    }
+        </style>
+    </head>
+    
+    <body>
+            <div class="header-outs" id="home">
+                    <div class="header-bar">
+                       <nav class="navbar navbar-expand-lg navbar-light">
+                          <div class="hedder-up">
+                             <h1><a class="navbar-brand" href="index.html">中国·潮</a></h1>
+                          </div>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                             <ul class="navbar-nav ">
+                                     <li class="nav-item active">
+                                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                             <a href="about.html" class="nav-link">国潮历史</a>
+                                          </li>
+                                          <li class="nav-item">
+                                             <a href="service.html" class="nav-link">品牌故事</a>
+                                          </li>
+                                          <li class="nav-item">
+                                             <a href="gallery.html" class="nav-link">品牌详情</a>
+                                          </li>
+                             </ul>
+                          </div>
+                       </nav>
+                    </div>
+                 </div>
+                 <!-- //Navigation-->
+                 <!--//headder-->
+                 <!-- banner -->
+                 <div class="inner_page-banner">
+                 </div>
+                 <!--//banner -->
+                 <!-- short -->
+                 <div class="using-border py-3">
+                    <div class="inner_breadcrumb  ml-4">
+                       <ul class="short_ls">
+                            <li>
+                            <a href="index.html">Home</a>
+                            <span>/ /</span>
+                         </li>
+                         <li>
+                               品牌故事·飞跃</li>
+    
+                      </ul>
+                    </div>
+                 </div>
+        <div class="container">
+            <div class="timeline">
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>上海大孚橡胶厂设计出了适合民用的解放鞋，取名为“飞跃”，并正式进入市场。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" alt="img" class="img-fluid img-thumbnail" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>1958年</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>1993年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/飞跃 copy.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>大孚橡胶厂将飞跃商标使用权卖给了上海大博文鞋业有限公司。</p>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p class="text-justify">法国人帕特里斯·巴斯蒂安（PATRICE BASTIAN）旅居上海，一眼看中当时大博文公司生产的飞跃鞋。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img class="img-fluid img-thumbnail" alt="img" style="border:0" src="img/red.jpg">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2005年</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2005年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="http://5b0988e595225.cdn.sohucs.com/images/20180912/8a5b6753628d4352a2b93b6b4742d153.png"
+                        class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>帕特里斯获得大博文给的Feiyue商标口头授权，双方开始了合作。同时，帕特里斯重新设计了Feiyue字样商标。</p>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>帕特里斯注册Feiyue国际商标，将“飞跃”品牌带到了欧洲市场。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2006年</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2007年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p class="text-justify">中国企业Culture Matters与飞跃合作，改良飞跃鞋并重新打开国内市场。</p>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p class="text-justify">奢侈品牌Celine向帕特里斯发出合作邀请，请求为新一季的“太极”系列合作推出一款球鞋。法国飞跃也因此从小众的先锋品牌升格为全球瞩目的时尚品牌。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2008年3月</time>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2016年</time>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/大孚.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>新大孚注册“大孚飞跃”商标。</p>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                        <p>飞跃商标转到回力鞋业有限公司名下。</p>
+                    </div>
+                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        <img src="img/red.jpg" class="img-fluid img-thumbnail" alt="img" style="border:0">
+                    </div>
+                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <time>2017年</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
