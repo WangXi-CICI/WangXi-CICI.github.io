@@ -1,5 +1,4 @@
-
-                    var chart = Highcharts.chart('trend', {
+    var chart = Highcharts.chart('trend', {
 	chart: {
 		type: 'line'
 	},
