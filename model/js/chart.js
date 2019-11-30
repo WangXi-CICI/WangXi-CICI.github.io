@@ -1,65 +1,34 @@
-$(document).ready(function(){
 
-    $("button#hide_h2").click(function() {
-        $("h2").hide(500);
-    });
-
-    $("button#show_h2").click(function() {
-        $("h2").show(300);
-        $("h2").css("color","blue");
-        $("h2").html("You clicked me hard.");
-    });
-
-    $("button#clear_screen").click(function() {
-        var $x = $("container");
-        $x.empty();
-    });
-
-
-     $("button#get_data2").click(function() {
-      var items = [];
-      var i = 0;
-      var airtable_read_endpoint = "https://api.airtable.com/v0/app9T6xQJ88UdG60q/Table%203?api_key=keysvB4lHDB6fjPJK";
-      var dataSet = [];
-      $.getJSON(airtable_read_endpoint, function(result) {
-             $.each(result.records, function(key,value) {
-                 items = [];
-                 items.push(value.fields.year);
-                 items.push(value.fields.penetration);
-                 
-                     dataSet.push(items);
-                     console.log(items);
-              }); // end .each
-              console.log(dataSet);
-
-           $('#table2').DataTable( {
-               data: dataSet,
-               retrieve: true,
-               columns: [
-                { title: "year",
-                defaultContent:""},
-              { title: "penetration",
-                defaultContent:""},
-               ]
-           } );
-
-           var chart = c3.generate({
-                data: {
-                    columns: dataSet,
-                    type : 'bar'
-                },
-                axis: {
-                  x: {label: '年份'},
-                  y: {label: '市场渗透率'}
-                },
-                bar: {
-                    title: "数据来源：有货电商平台",
-                }
-            });
-
-      }); // end .getJSON
-
-   }); // end button
-
-}); // document ready
-
+                    var chart = Highcharts.chart('container', {
+	chart: {
+		type: 'line'
+	},
+	title: {
+		text: '国潮品牌市场渗透率'
+	},
+	subtitle: {
+		text: '数据来源:《2019中国潮流消费发展白皮书》'
+	},
+	xAxis: {
+		categories: ['2017年', '2018年', '2019年']
+	},
+	yAxis: {
+		title: {
+			text: '市场渗透率 (%)'
+		}
+	},
+	plotOptions: {
+		line: {
+			dataLabels: {
+				// 开启数据标签
+				enabled: true          
+			},
+			// 关闭鼠标跟踪，对应的提示框、点击事件会失效
+			enableMouseTracking: false
+		}
+	},
+	series: [{
+		name: 'MAT2017-MAT2019',
+		data: [25,32,38]
+	}]
+});

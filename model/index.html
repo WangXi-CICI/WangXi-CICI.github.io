@@ -1,434 +1,353 @@
 <!DOCTYPE html>
-<html lang="zxx">
-   <head>
-      <title>中国潮</title>
-      <!--meta tags -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="keywords" content="" />
-      <script>
-         addEventListener("load", function () {
-         	setTimeout(hideURLbar, 0);
-         }, false);
-         
-         function hideURLbar() {
-         	window.scrollTo(0, 1);
-         }
-      </script>
-      <!--//meta tags ends here-->
-      <!--booststrap-->
-      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-      <!--//booststrap end-->
-      <!-- font-awesome icons -->
-      <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
-      <!-- //font-awesome icons -->
-      <link href="css/owl.carousel.css" rel="stylesheet">
-      <!-- Owl-carousel-CSS -->
-      <!--stylesheets-->
-      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-      <!--//stylesheets-->
-      <link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-      <link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-   </head>
-   <body>
-      <div class="header-outs" id="home">
-         <div class="header-bar">
-            <nav class="navbar navbar-expand-lg navbar-light">
-               <div class="hedder-up">
-                  <h1><a class="navbar-brand" href="index.html">中国·潮</a></h1>
-               </div>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                  <ul class="navbar-nav ">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">国潮历史</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#get_story" class="nav-link">品牌故事</a>
-                     </li>
-                     
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        品牌详情
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                           <a class="nav-link" href="li_ning.html">李宁</a>
-                           <a class="nav-link " href="hui_li1.html">回力</a>
-                           <a class="nav-link " href="fei_yue1.html">飞跃</a>
-                           <a class="nav-link " href="erdos1.html">鄂尔多斯</a>
-                           <a class="nav-link " href="peacebird1.html">太平鸟</a>
-                           <a class="nav-link " href="lily1.html">LILY</a>
-                        </div>
-                     </li>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-         <!-- //Navigation -->
-         <!-- Slideshow 4 -->
-         <div class="slider">
-            <div class="callbacks_container">
-               <ul class="rslides" id="slider4">
-                  <li>
-                     <div class="slider-img one-img">
-                        <div class="container">
-                           <div class="slider-info text-center">
-                              <div class="upper-info">
-                                 <h5>style</h5>
-                              </div>
-                              <div class="bottom-info">
-                                 <h4>中国“新”潮牌 </h4>
-                                 <div class="outs_more-buttn">
-                                    <a href="about.html">Read More</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="slider-img two-img">
-                        <div class="container">
-                           <div class="slider-info text-center">
-                              <div class="upper-info">
-                                 <h5>style</h5>
-                              </div>
-                              <div class="bottom-info">
-                                 <h4>Creative Style And Fashion</h4>
-                                 <div class="outs_more-buttn">
-                                    <a href="about.html">Read More</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <!-- This is here just to demonstrate the callbacks -->
-            <!-- <ul class="events">
-               <li>Example 4 callback events</li>
-               </ul>-->
-            <div class="clearfix"></div>
-         </div>
-      </div>
-      <!-- //banner -->
-      <!--about -->
-      <div class="section">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-12 text-center">
-                                          
-                        <h1>国潮品牌消费规模占比趋势</h1>
-                        <button type="button" class="btn btn-info btn-sm" id="get_story">展示数据</button>
-                        <div class="table-responsive">
-                           
-                            <table id="table2" width="100%" class="table table-bordered"></table>
-                        </div>
-                   
-                    <div id="chart"></div>
-                </div>
-            </div>
-                </div>
-            
-        </div>
-       
-      <!--//about -->
-      <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >建站模板</a></div>
-      <!--services-->
-      <section class="service py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title clr text-center mb-lg-5 mb-md-4  mb-sm-4 mb-3">services</h3>
-            <div class="row agile-service-grids-all">
-               <div class="col-lg-4 w3layouts-service-list">
-                  <div class="white-shadow rounded p-lg-4 p-md-4 p-sm-3 p-3">
-                     <div class="white-left">
-                        <span class="fab fa-slideshare banner-icon" aria-hidden="true"></span>
-                     </div>
-                     <div class="white-right">
-                        <h4>Lorem ipsum</h4>
-                        <p>delectus reiciendis maiores alias consequatur aut.maiores alias consequatur aut.</p>
-                     </div>
-                     <div class="outs-agile-buttn">
-                        <a href="about.html">Learn more</a>
-                     </div>
-                  </div>
-                  <div class="white-shadow rounded mt-4 p-lg-4 p-md-4 p-sm-3 p-3">
-                     <div class="white-left">
-                        <span class="fab fa-angellist banner-icon" aria-hidden="true"></span>
-                     </div>
-                     <div class="white-right">
-                        <h4>Consequatur</h4>
-                        <p>delectus reiciendis maiores alias consequatur aut.maiores alias consequatur aut.</p>
-                     </div>
-                     <div class="outs-agile-buttn">
-                        <a href="about.html">Learn more</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4  w3layouts-service-list">
-                  <div class="white-shadow rounded p-lg-4 p-md-4 p-sm-3 p-3">
-                     <div class="white-left">
-                        <span class="far fa-smile banner-icon" aria-hidden="true"></span>
-                     </div>
-                     <div class="white-right">
-                        <h4>Lorem ipsum</h4>
-                        <p>delectus reiciendis maiores alias consequatur aut.maiores alias consequatur aut.</p>
-                     </div>
-                     <div class="outs-agile-buttn">
-                        <a href="about.html">Learn more</a>
-                        <div class="agileinfo-service-img">
-                           <img src="images/ser.png" class="img-fluid text-center" alt="">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4  w3layouts-service-list">
-                  <div class="white-shadow rounded p-lg-4 p-md-4 p-sm-3 p-3">
-                     <div class="white-left">
-                        <span class="fas fa-chess-queen banner-icon" aria-hidden="true"></span>
-                     </div>
-                     <div class="white-right">
-                        <h4>Maiores alias</h4>
-                        <p>delectus reiciendis maiores alias consequatur aut.maiores alias consequatur aut.</p>
-                     </div>
-                     <div class="outs-agile-buttn">
-                        <a href="about.html">Learn more</a>
-                     </div>
-                  </div>
-                  <div class="white-shadow rounded mt-4 p-lg-4 p-md-4 p-sm-3 p-3">
-                     <div class="white-left">
-                        <span class="fas fa-bullhorn banner-icon" aria-hidden="true"></span>
-                     </div>
-                     <div class="white-right">
-                        <h4>Delectus alias</h4>
-                        <p>delectus reiciendis maiores alias consequatur aut.maiores alias consequatur aut.</p>
-                     </div>
-                     <div class="outs-agile-buttn">
-                        <a href="#" data-toggle="modal" data-target="#exampleModalLive">Learn more</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!--//services-->
-      <!--blog-->
-      <section class="blog py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3" >
-            <h3 class="title text-center" id='get_story'>品牌故事</h3>
-            <h5 class="text-center">（点击图片了解详情）</h5>
-            <div class="row blog-top-grids" >
-               <div class="col-lg-5 col-md-6 left-side-agile">
-                  <h4>李宁 LI-NING
-                  </h4>
-                  <p class="groom-right">1990年,中国家喻户晓的"体操王子"李宁创立了李宁体育用品公司，2004年6月于香港上市。
-                        从1992年巴塞罗那奥运会开始，李宁公司伴随中国体育军团一路走来，长期支持中国体操、跳水、射击、兵乓球、羽毛球等五支"金牌梦之队"，为运动队提供装备。
-                        公司自成立之初便非常重视原创设计，将创新视为品牌发展的根本。
-                        秉承着"赢得梦想""消费者导向""我们文化""突破"的理念，李宁公司力求将自身打造成为全球领先的体育用品公司。
-                  </p>
-               </div>
-               <div class="col-lg-5 offset-lg-2 col-md-6 blog-w3l-right " >
-                     <a href="li_ning1.html"> <img src="img/IMG_1708.jpg" class="img-fluid" alt=""></a>
-               </div>
-            </div>
-            <div class="row blog-top-grids py-lg-4 py-md-3 
-               py-3">
-               <div class="col-lg-5 col-md-6  blog-w3l-left py-md-5 py-sm-4 py-4">
-                     <a href="fei_yue.html"> 
-                        <img src="http://nwzimg.wezhan.cn/contents/sitefiles2030/10154141/images/10901843.jpg" class="img-fluid" alt="">
-                     </a>
-               </div>
-               <div class="col-lg-5 offset-lg-2 col-md-6 left-side-agile py-lg-5 py-md-4">
-                  <h4>飞跃 Feiyue
-                  </h4>
-                  <p class="groom-right">飞跃Feiyue，意味着"flying forward"，其历史可追溯回中国上世纪30年代，最早被用作田径鞋、武僧鞋。
-                        上世纪，飞跃鞋在中国曾红极一时，又迅速销声匿迹；直至2005年，它的历史被法国人彻底改变。如今飞跃鞋在法国、英国、荷兰和比利时销售，产品系列的命名大多来自中国武术。
-                      飞跃正在将中国文化和潮流传向世界。
-                  </p>
-               </div>
-            </div>
-            <div class="row blog-top-grids">
-               <div class="col-lg-5 col-md-6 left-side-agile">
-                  <h4>回力 WARRIOR
-                  </h4>
-                  <p class="groom-right">回力鞋业创建于1927年，距今已有92年历史。回力商标的创意源于英文“WARRIOR”意为战士，勇士，斗士，由此将“WARRIOR”谐音得来“回力”中文商标名，含寓“回天之力”。
-                        回力鞋曾是中国一代人的回忆，是家家户户每人一双的必需品。如今回力以“经典、时尚、专业”为品牌内涵主题，重振民族品牌，引领国潮风尚。
-                  </p>
-               </div>
-               <div class="col-lg-5 offset-lg-2 col-md-6 blog-w3l-bottom">
-                     <a href="hui_li.html"> <img src="http://img.mp.itc.cn/upload/20170810/a6141fd2740b47b2981df1a439d4d9c6_th.jpg" class="img-fluid" alt="">
-                     </a>
-               </div>
-            </div>
-            <div class="row blog-top-grids py-lg-4 py-md-3 
-            py-3">
-            <div class="col-lg-5 col-md-6  blog-w3l-left py-md-5 py-sm-4 py-4">
-                  <a href="erdos.html">  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/H5kJa7uHXSXVQoibvrF3GXicOUW2jA3BHIeDNFy4LicWk4UZiasXpNAC2icqB19nx7QNfiaaLcScVKq7PL5kuDg7pjJA/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" class="img-fluid" alt="">
-                  </a></div>
-            <div class="col-lg-5 offset-lg-2 col-md-6 left-side-agile py-lg-5 py-md-4">
-               <h4>鄂尔多斯 Erdos
-               </h4>
-               <p class="groom-right">飞ERDOS，来自中国内蒙古的羊绒品牌，创立于1980年。在上世纪八十年代羊绒厂家哄抬价格和原绒掺杂严重的情况下，鄂尔多斯集团掀起
-                     一场“拒绝假绒、保证质量”的行业行动，拯救了一批濒临“死亡”的羊绒加工企业，并将“温暖全世界”的品牌理念传遍中国。如今，鄂尔多斯以国际视野，从中国出发，“为羊绒赋予时尚的意义，
-                      为时尚融入羊绒的品质”将中国高端时尚带入世界舞台。
-               </p>
-            </div>
-         </div>
-         <div class="row blog-top-grids">
-               <div class="col-lg-5 col-md-6 left-side-agile">
-                  <h4>太平鸟 peacebird
-                  </h4>
-                  <p class="groom-right">宁波太平鸟时尚服饰股份有限公司成立于1995年，是一家多品牌时尚服饰公司，
-                        拥有PEACEBIRD太平鸟女装、PEACEBIRD太平鸟男装、LEDIN女装、MATERIAL GIRL女装、Mini Peace童装、PEACEBIRD LIVIN'太平鸟巢等多个品牌。
-                        公司坚持以“让每个人尽享时尚的乐趣”为使命，抓住中国服饰行业的发展机遇，致力于为消费者提供中等价位的优质时尚服饰，立志成为“卓越的时尚品牌零售公司”。
-                  </p>
-               </div>
-               <div class="col-lg-5 offset-lg-2 col-md-6 blog-w3l-bottom">
-                     <a href="peacebird.html"> <img src="http://www.peacebird.com//admin/upload/20190611/1560233486978117.png" class="img-fluid" alt="">
-              </a> </div>
-            </div>
-            <div class="row blog-top-grids py-lg-4 py-md-3 
-            py-3">
-            <div class="col-lg-5 col-md-6  blog-w3l-left py-md-5 py-sm-4 py-4">
-                  <a href="lily.html">  <img src="img/Lily1.jpg" class="img-fluid" alt="">
-           </a> </div>
-            <div class="col-lg-5 offset-lg-2 col-md-6 left-side-agile py-lg-5 py-md-4">
-               <h4>Lily 商务时装
-               </h4>
-               <p class="groom-right">成立于2000年，作为年轻OL商务时装的开创者，Lily以清新明快、现代简约的风格，为都市年轻职业女性设计商务场合＂正合适＂的商务时装。
-                     目前，Lily商务时装已在中国开设700余家品牌店铺，并在俄罗斯、沙特、泰国、新加坡、科威特等10个海外国家开设零售店铺逾70家。
-                     2006年，Lily品牌成功登陆国际米兰时装周，成为国际时尚圈倍受关注的新锐时装品牌。
-               </p>
-            </div>
-         </div>
-         </div>
-      </section>
-      <!--blog-->
-      <!--team -->
-     
+<html>
     
-      <!--//images slider  -->
-      <!--footer -->
-      <footer class="py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-           
-            <div class="buttom-nav py-sm-4 py-3">
-               <nav class="border-line py-2">
-                  <ul class="nav justify-content-center">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="about.html" class="nav-link ">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="service.html" class="nav-link">Services</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="gallery.html" class="nav-link">Gallery</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                     </li>
-                  </ul>
-               </nav>
+    <head>
+        <title>中国潮</title>
+        <!--meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="">
+        <script>
+            addEventListener("load", function () {
+                                                     	setTimeout(hideURLbar, 0);
+                                                     }, false);
+                                                     
+                                                     function hideURLbar() {
+                                                     	window.scrollTo(0, 1);
+                                                     }
+        </script>
+        <!--//meta tags ends here-->
+        <!--booststrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <!--//booststrap end-->
+        <!-- font-awesome icons -->
+        <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css"
+        media="all">
+        <!-- //font-awesome icons -->
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <!-- Owl-carousel-CSS -->
+        <!--stylesheets-->
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+        <!--//stylesheets-->
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500"
+        rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="header-outs" id="home">
+            <div class="header-bar">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="hedder-up">
+                        <h1>
+                            <a class="navbar-brand" href="index.html">中国·潮</a>
+                        </h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#data" class="nav-link">关于国潮</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#story" class="nav-link">品牌故事</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        品牌详情
+
+                        </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="nav-link" href="li_ning.html">李宁</a>
+                                    <a class="nav-link " href="hui_li1.html">回力</a>
+                                    <a class="nav-link " href="fei_yue1.html">飞跃</a>
+                                    <a class="nav-link " href="erdos1.html">鄂尔多斯</a>
+                                    <a class="nav-link " href="peacebird1.html">太平鸟</a>
+                                    <a class="nav-link " href="lily1.html">LILY</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div class="copy-agile-right text-center">
-               <p> 
-                  Copyright &copy; 2018.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
-               </p>
+            <!-- //Navigation -->
+            <!-- Slideshow 4 -->
+            <div class="slider">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider4">
+                        <li>
+                            <div class="slider-img one-img">
+                                <div class="container">
+                                    <div class="slider-info text-center">
+                                        <div class="upper-info">
+                                            <h5>style</h5>
+                                        </div>
+                                        <div class="bottom-info">
+                                            <h4>中国“新”潮牌</h4>
+                                            <div class="outs_more-buttn">
+                                                <a href="#story">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider-img two-img">
+                                <div class="container">
+                                    <div class="slider-info text-center">
+                                        <div class="upper-info">
+                                            <h5>style</h5>
+                                        </div>
+                                        <div class="bottom-info">
+                                            <h4>李宁·跨越三十年的时尚</h4>
+                                            <div class="outs_more-buttn">
+                                                <a href="li_ning.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- This is here just to demonstrate the callbacks -->
+                <!-- <ul class="events">
+
+               <li>Example 4 callback events</li>
+
+               </ul>-->
+                <div class="clearfix"></div>
             </div>
-         </div>
-      </footer>
-      <!--js working-->
-      <script src='js/jquery-2.2.3.min.js'></script>
-      <!--//js working-->
-      <!--responsiveslides banner-->
-      <script src="js/responsiveslides.min.js"></script>
-      <script>
-         // You can also use "$(window).load(function() {"
-         $(function () {
-         	// Slideshow 4
-         	$("#slider4").responsiveSlides({
-         		auto: true,
-         		pager:true,
-         		nav: false,
-         		speed: 900,
-         		namespace: "callbacks",
-         		before: function () {
-         			$('.events').append("<li>before event fired.</li>");
-         		},
-         		after: function () {
-         			$('.events').append("<li>after event fired.</li>");
-         		}
-         	});
-         
-         });
-      </script>
-      <!--// responsiveslides banner-->	  
-      <!--About OnScroll-Number-Increase-JavaScript -->
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.countup.js"></script>
-      <script>
-         $('.counter').countUp();
-      </script>
-      <!-- //OnScroll-Number-Increase-JavaScript -->
-      <script src="js/owl.carousel.js"></script>
-      <script>
-         $(document).ready(function () {
-         	$("#owl-demo2").owlCarousel({
-         		items: 1,
-         		lazyLoad: false,
-         		autoPlay: true,
-         		navigation: false,
-         		navigationText: false,
-         		pagination: true,
-         	});
-         });
-      </script>
-      <!-- start-smoth-scrolling -->
-      <script src="js/move-top.js"></script>
-      <script src="js/easing.js"></script>
-      <script>
-         jQuery(document).ready(function ($) {
-         	$(".scroll").click(function (event) {
-         		event.preventDefault();
-         		$('html,body').animate({
-         			scrollTop: $(this.hash).offset().top
-         		}, 900);
-         	});
-         });
-      </script>
-      <!-- start-smoth-scrolling -->
-      <!-- here stars scrolling icon -->
-      <script>
-         $(document).ready(function () {
-         
-         	var defaults = {
-         		containerID: 'toTop', // fading element id
-         		containerHoverID: 'toTopHover', // fading element hover id
-         		scrollSpeed: 1200,
-         		easingType: 'linear'
-         	};
-         
-         
-         	$().UItoTop({
-         		easingType: 'easeOutQuart'
-         	});
-         
-         });
-      </script>
-      <!-- //here ends scrolling icon -->
-      <!--bootstrap working-->
-      <script src="js/bootstrap.min.js"></script>
-      <!-- //bootstrap working-->
-      <script src="js/chart.js"></script>
-   </body>
+        </div>
+        <br>
+        <br>
+        <!-- //banner -->
+        <!--about -->
+        <div class="tlinks">Collect from
+            <a href="http://www.cssmoban.com/">建站模板</a>
+        </div>
+        <!--services-->
+        <section class="service py-lg-4 py-md-3 py-sm-3 py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 contenteditable="true" class="text-center" style="color: white" id="data">国潮</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="color: rgb(224, 222, 222)">
+                        <p>“国潮”多指服装、鞋履与配件品类中的中国原创潮流品牌，它们代表了中国的原创设计与产品，不但能与国际接轨，甚至审美领先于国际。从某种意义上来讲，"国潮"是以品牌为载体，既是满足年轻消费者对时尚的追求、个性的张扬，又是对传统文化的一种自然回归和凸显的流行现象。
+                            根据《2019中国潮流消费发展白皮书》数据，国潮品牌渗透率近三年增长超10%，越多越多的国人开始认可“中国制造”。</p>
+                    </div>
+                    <div id="container" style="min-width:400px;height:400px"></div>
+                </div>
+            </div>
+        </section>
+        <section class="blog py-lg-4 py-md-3 py-sm-3 py-3">
+            <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+                <h3 class="title text-center" id="story">品牌故事</h3>
+                <h6 class="text-center">（点击图片了解详情）</h6>
+                <div class="row blog-top-grids">
+                    <div class="col-lg-5 col-md-6 left-side-agile">
+                        <h4>李宁 LI-NING</h4>
+                        <p class="groom-right">1990年,中国家喻户晓的"体操王子"李宁创立了李宁体育用品公司，2004年6月于香港上市。 从1992年巴塞罗那奥运会开始，李宁公司伴随中国体育军团一路走来，长期支持中国体操、跳水、射击、兵乓球、羽毛球等五支"金牌梦之队"，为运动队提供装备。
+                            公司自成立之初便非常重视原创设计，将创新视为品牌发展的根本。 秉承着"赢得梦想""消费者导向""我们文化""突破"的理念，李宁公司力求将自身打造成为全球领先的体育用品公司。</p>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 blog-w3l-right ">
+                        <a href="li_ning1.html"> <img src="img/IMG_1708.jpg" class="img-fluid" alt=""></a>
+                    </div>
+                </div>
+                <div class="row blog-top-grids py-lg-4 py-md-3 
+
+               py-3">
+                    <div class="col-lg-5 col-md-6  blog-w3l-left py-md-5 py-sm-4 py-4">
+                        <a href="fei_yue.html"> 
+
+                        <img src="http://nwzimg.wezhan.cn/contents/sitefiles2030/10154141/images/10901843.jpg" class="img-fluid" alt="">
+
+                     </a>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 left-side-agile py-lg-5 py-md-4">
+                        <h4>飞跃 Feiyue</h4>
+                        <p class="groom-right">飞跃Feiyue，意味着"flying forward"，其历史可追溯回中国上世纪30年代，最早被用作田径鞋、武僧鞋。 上世纪，飞跃鞋在中国曾红极一时，又迅速销声匿迹；直至2005年，它的历史被法国人彻底改变。如今飞跃鞋在法国、英国、荷兰和比利时销售，产品系列的命名大多来自中国武术。
+                            飞跃正在将中国文化和潮流传向世界。</p>
+                    </div>
+                </div>
+                <div class="row blog-top-grids">
+                    <div class="col-lg-5 col-md-6 left-side-agile">
+                        <h4>回力 WARRIOR</h4>
+                        <p class="groom-right">回力鞋业创建于1927年，距今已有92年历史。回力商标的创意源于英文“WARRIOR”意为战士，勇士，斗士，由此将“WARRIOR”谐音得来“回力”中文商标名，含寓“回天之力”。
+                            回力鞋曾是中国一代人的回忆，是家家户户每人一双的必需品。如今回力以“经典、时尚、专业”为品牌内涵主题，重振民族品牌，引领国潮风尚。</p>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 blog-w3l-bottom">
+                        <a href="hui_li.html"> <img src="http://img.mp.itc.cn/upload/20170810/a6141fd2740b47b2981df1a439d4d9c6_th.jpg" class="img-fluid" alt="">
+
+                     </a>
+                    </div>
+                </div>
+                <div class="row blog-top-grids py-lg-4 py-md-3 
+
+            py-3">
+                    <div class="col-lg-5 col-md-6  blog-w3l-left py-md-5 py-sm-4 py-4">
+                        <a href="erdos.html">  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/H5kJa7uHXSXVQoibvrF3GXicOUW2jA3BHIeDNFy4LicWk4UZiasXpNAC2icqB19nx7QNfiaaLcScVKq7PL5kuDg7pjJA/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" class="img-fluid" alt="">
+
+                  </a>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 left-side-agile py-lg-5 py-md-4">
+                        <h4>鄂尔多斯 Erdos</h4>
+                        <p class="groom-right">飞ERDOS，来自中国内蒙古的羊绒品牌，创立于1980年。在上世纪八十年代羊绒厂家哄抬价格和原绒掺杂严重的情况下，鄂尔多斯集团掀起 一场“拒绝假绒、保证质量”的行业行动，拯救了一批濒临“死亡”的羊绒加工企业，并将“温暖全世界”的品牌理念传遍中国。如今，鄂尔多斯以国际视野，从中国出发，“为羊绒赋予时尚的意义，
+                            为时尚融入羊绒的品质”将中国高端时尚带入世界舞台。</p>
+                    </div>
+                </div>
+                <div class="row blog-top-grids">
+                    <div class="col-lg-5 col-md-6 left-side-agile">
+                        <h4>太平鸟 peacebird</h4>
+                        <p class="groom-right">宁波太平鸟时尚服饰股份有限公司成立于1995年，是一家多品牌时尚服饰公司， 拥有PEACEBIRD太平鸟女装、PEACEBIRD太平鸟男装、LEDIN女装、MATERIAL
+                            GIRL女装、Mini Peace童装、PEACEBIRD LIVIN'太平鸟巢等多个品牌。 公司坚持以“让每个人尽享时尚的乐趣”为使命，抓住中国服饰行业的发展机遇，致力于为消费者提供中等价位的优质时尚服饰，立志成为“卓越的时尚品牌零售公司”。</p>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 blog-w3l-bottom">
+                        <a href="peacebird.html"> <img src="http://www.peacebird.com//admin/upload/20190611/1560233486978117.png" class="img-fluid" alt="">
+
+              </a>
+                    </div>
+                </div>
+                <div class="row blog-top-grids py-lg-4 py-md-3 
+
+            py-3">
+                    <div class="col-lg-5 col-md-6  blog-w3l-left py-md-5 py-sm-4 py-4">
+                        <a href="lily.html">  <img src="img/Lily1.jpg" class="img-fluid" alt="">
+
+           </a>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 left-side-agile py-lg-5 py-md-4">
+                        <h4>Lily 商务时装</h4>
+                        <p class="groom-right">成立于2000年，作为年轻OL商务时装的开创者，Lily以清新明快、现代简约的风格，为都市年轻职业女性设计商务场合＂正合适＂的商务时装。 目前，Lily商务时装已在中国开设700余家品牌店铺，并在俄罗斯、沙特、泰国、新加坡、科威特等10个海外国家开设零售店铺逾70家。
+                            2006年，Lily品牌成功登陆国际米兰时装周，成为国际时尚圈倍受关注的新锐时装品牌。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer -->
+        <footer class="py-lg-4 py-md-3 py-sm-3 py-3">
+            <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+                <div class="buttom-nav py-sm-4 py-3">
+                    <nav class="border-line py-2">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#data" class="nav-link">关于国潮</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#story" class="nav-link">品牌故事</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html" class="nav-link">品牌详情</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="copy-agile-right text-center">
+                    <p>声明：本网站为香港中文大学新媒体专业COM5961（2019）课程个人期末项目(非商用)。</p>
+                    <p>Copyright © 2018.Company name All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/chart.js"></script>
+        <!--js working-->
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <!--//js working-->
+        <!--responsiveslides banner-->
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+                                                     $(function () {
+                                                     	// Slideshow 4
+                                                     	$("#slider4").responsiveSlides({
+                                                     		auto: true,
+                                                     		pager:true,
+                                                     		nav: false,
+                                                     		speed: 900,
+                                                     		namespace: "callbacks",
+                                                     		before: function () {
+                                                     			$('.events').append("<li>before event fired.</li>");
+                                                     		},
+                                                     		after: function () {
+                                                     			$('.events').append("<li>after event fired.</li>");
+                                                     		}
+                                                     	});
+                                                     
+                                                     });
+        </script>
+        <!--// responsiveslides banner-->
+        <!--About OnScroll-Number-Increase-JavaScript -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.countup.js"></script>
+        <script>
+            $('.counter').countUp();
+        </script>
+        <!-- //OnScroll-Number-Increase-JavaScript -->
+        <script>
+            $(document).ready(function () {
+                                                     	$("#owl-demo2").owlCarousel({
+                                                     		items: 1,
+                                                     		lazyLoad: false,
+                                                     		autoPlay: true,
+                                                     		navigation: false,
+                                                     		navigationText: false,
+                                                     		pagination: true,
+                                                     	});
+                                                     });
+        </script>
+        <!-- start-smoth-scrolling -->
+        <script src="js/move-top.js"></script>
+        <script src="js/easing.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                                                     	$(".scroll").click(function (event) {
+                                                     		event.preventDefault();
+                                                     		$('html,body').animate({
+                                                     			scrollTop: $(this.hash).offset().top
+                                                     		}, 900);
+                                                     	});
+                                                     });
+        </script>
+        <!-- start-smoth-scrolling -->
+        <!-- here stars scrolling icon -->
+        <script>
+            $(document).ready(function () {
+                                                     
+                                                     	var defaults = {
+                                                     		containerID: 'toTop', // fading element id
+                                                     		containerHoverID: 'toTopHover', // fading element hover id
+                                                     		scrollSpeed: 1200,
+                                                     		easingType: 'linear'
+                                                     	};
+                                                     
+                                                     
+                                                     	$().UItoTop({
+                                                     		easingType: 'easeOutQuart'
+                                                     	});
+                                                     
+                                                     });
+        </script>
+        <!-- //here ends scrolling icon -->
+        <!--bootstrap working-->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- //bootstrap working-->
+        <script>
+            js/chart.js
+        </script>
+    </body>
+
 </html>
